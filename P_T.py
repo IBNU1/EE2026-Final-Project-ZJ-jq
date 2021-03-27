@@ -15,15 +15,7 @@ test_array = RGB_NUMBER(input_array)
 
 
 def interate_values(input_image):
-    # now, lets convert that image to a single greyscale image using convert()
 
-    # the threshold value is usually provided as a number between 0 and 255, which
-    # is the number of bits in a byte.
-    # the algorithm for the binarization is pretty simple, go through every pixel in the
-    # image and, if it's greater than the threshold, turn it all the way up (255), and
-    # if it's lower than the threshold, turn it all the way down (0).
-    # so lets write this in code. First, we need to iterate over all of the pixels in the
-    # image we want to work with
     for y in range(input_image.height):
         for x in range(input_image.width):
             values = RGB_NUMBER(input_image.getpixel((x,y)))
